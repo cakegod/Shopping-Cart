@@ -9,8 +9,8 @@ const RouterSwitch = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<App />}>
-				<Route path='/shop' element={<Shop />}></Route>
-				<Route path='/cart' element={<Cart />}></Route>
+					<Route path='/shop' element={<Shop />}></Route>
+					<Route path='/cart' element={<Cart />}></Route>
 				</Route>
 			</Routes>
 		</BrowserRouter>
