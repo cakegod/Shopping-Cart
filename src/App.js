@@ -19,7 +19,7 @@ const App = () => {
 					</Link>
 					<Link to='cart' className=' flex items-center'>
 						<MdShoppingCart size='25' /> Cart{' '}
-						{cart.reduce((acc, item) => acc + item.quantity, 0)}
+						<div className="bg-dark rounded-full h-8 w-8 flex justify-center items-center ml-1">{cart.reduce((acc, item) => acc + item.quantity, 0)}</div>
 					</Link>
 				</div>
 			</nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import CartBuy from "./CartTable/CartBuy";
 import ProductTable from './CartTable/CartTable';
 
 const Cart = () => {
@@ -8,6 +9,7 @@ const Cart = () => {
 			<div className='xl:w-3/5 w-4/5 text-lg flex flex-col justify-center shadow rounded-md bg-light'>
 				<ProductTable />
 			</div>
+			<CartBuy/>
 		</div>
 	);
 };

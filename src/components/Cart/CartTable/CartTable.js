@@ -3,11 +3,11 @@ import CartCategory from './CartCategory';
 import CartRows from './CartRows';
 
 const CartTable = () => {
-
 	return (
 		<>
 			<CartCategory />
 			<CartRows />
+	
 		</>
 	);
 };
