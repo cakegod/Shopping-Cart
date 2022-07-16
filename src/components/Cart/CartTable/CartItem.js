@@ -28,10 +28,10 @@ const CartItem = ({ product }) => {
 	};
 
 	return (
-		<div className='grid grid-cols-[2fr_1fr_1fr] font-medium text-xl items-center text-center p-4'>
+		<div className='grid grid-cols-[2fr_repeat(3,_1fr)] font-medium text-lg items-center text-center p-3'>
 			<div className='flex items-center gap-5'>
 				<img
-					className='h-[180px] w-[180px] shadow border-8 border-bgc border-double rounded-xl'
+					className='h-[140px] w-[140px] shadow border-8 border-bgc border-double rounded-xl'
 					src={product.url}
 					alt={product.name}
 				/>
@@ -51,6 +51,7 @@ const CartItem = ({ product }) => {
 					+
 				</button>
 			</div>
+			<p>{product.price * product.quantity}€</p>
 		</div>
 	);
 };

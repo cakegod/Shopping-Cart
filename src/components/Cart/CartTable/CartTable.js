@@ -7,7 +7,6 @@ const CartTable = () => {
 		<>
 			<CartCategory />
 			<CartRows />
-	
 		</>
 	);
 };
