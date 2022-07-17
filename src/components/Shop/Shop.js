@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Product from './ProductCard/ProductCard';
+import Product from './ProductCard';
 
 const products = [
 	{
@@ -40,7 +39,7 @@ const products = [
 		price: 300,
 		url: 'https://media.bakingo.com/sq-mango-cake0020frui-A_2.jpg',
 		description:
-			'Made of three rich cream layers and mango fillings, this cake is a tantalizing treat. The crest that is frosted with white chocolate shavings offers mango glaze which is made from fresh mango pulp',
+			'Made of three rich cream layers and mango fillings. The crest is frosted with white chocolate shavings offers mango glaze which is made from fresh mango pulp',
 		quantity: 1,
 	},
 	{
@@ -51,11 +50,43 @@ const products = [
 			'Layered with an alluring fresh cream supported by some chocolate chips all around. It is certain that one who eats once craves for more.',
 		quantity: 1,
 	},
+	{
+		name: 'Caramel Cake',
+		price: 400,
+		url: 'https://media.bakingo.com/sq-caramel-cake-cake1605cara-A_0.jpg',
+		description:
+			'Round-shaped cake covered in the soft whipped white cream topped with three chocolate swirls and heaps of cream with caramel dripping.',
+		quantity: 1,
+	},
+	{
+		name: 'kitKat Chocolate Cake',
+		price: 350,
+		url: 'https://media.bakingo.com/sq-kitkat-chocolate-cake-cake1119choc-A_1.jpg',
+		description:
+			'Round-shaped KitKat cake cream filled in between stacks of chocolate cake, and adorned with chocolate icing and glaze chocolate coating.',
+		quantity: 1,
+	},
+	{
+		name: 'Tiramisu Cake',
+		price: 350,
+		url: 'https://media.bakingo.com/sq-scrumptious-tiramisu-cake-cake2636exot-A.jpg',
+		description:
+			'Layered with an alluring fresh cream supported by some coffee & rum dripped ladyfingers . It is certain that one who eats once craves for more.',
+		quantity: 1,
+	},
+	{
+		name: 'Assorted Fruit & Almond Cake',
+		price: 350,
+		url: 'https://media.bakingo.com/sq-fresh-fruit-cake0014frui-A_2.jpg',
+		description:
+			'Freshly baked Vanilla cake, Whipped cream and bountiful tropical fruits come together to create a treat that is even tastier than it looks.',
+		quantity: 1,
+	},
 ];
 
 const Shop = () => {
 	return (
-		<div className='grid 2xl:grid-cols-2 2xl:grid-rows-1 gap-10 p-8 bg-bgc'>
+		<div className='grid 2xl:grid-cols-2 2xl:grid-rows-1 gap-10 p-4 sm:p-8 bg-bgc'>
 			{products.map((product) => (
 				<Product key={product.name} product={product} />
 			))}

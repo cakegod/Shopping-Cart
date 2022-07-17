@@ -35,23 +35,23 @@ const CartItem = ({ product }) => {
 					src={product.url}
 					alt={product.name}
 				/>
-				<p>{product.name}</p>
+				<h2>{product.name}</h2>
 			</div>
-			<p>{product.price}€</p>
+			<h2>{product.price}€</h2>
 			<div className='flex justify-center items-center'>
 				<button
 					className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
 					onClick={decreaseQuantity}>
 					-
 				</button>
-				<p>{product.quantity}</p>
+				<h2>{product.quantity}</h2>
 				<button
 					className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
 					onClick={increaseQuantity}>
 					+
 				</button>
 			</div>
-			<p>{product.price * product.quantity}€</p>
+			<h3>{product.price * product.quantity}€</h3>
 		</div>
 	);
 };
