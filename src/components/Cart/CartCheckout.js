@@ -2,9 +2,9 @@ import React from 'react';
 
 const CartCheckout = ({ cart }) => {
 	return (
-		<div className='flex justify-end items-center bg-bgc w-3/5 h-14 gap-2'>
-      <button className="bg-accent p-2 rounded-md font-extrabold text-light hover:scale-105 transition-all">Proceed to checkout</button>
-			<div className="bg-light flex p-2 rounded-md">
+		<div className='flex items-center bg-bgc h-14 justify-between w-full pt-2'>
+      <button className="bg-accent h-full w-32 p-2 rounded-md font-extrabold text-light hover:scale-105 transition-all">Checkout</button>
+			<div className="bg-light flex items-center rounded-md h-full p-2">
         <p className='mx-4 text-xl font-medium '>Subtotal</p>
         <p className='mx-4 text-xl font-bold'>
           {cart.reduce((acc, item) => acc + item.price * item.quantity, 0)}€

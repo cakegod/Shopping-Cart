@@ -28,30 +28,32 @@ const CartItem = ({ product }) => {
 	};
 
 	return (
-		<div className='grid grid-cols-[2fr_repeat(3,_1fr)] font-medium text-lg items-center text-center p-3'>
-			<div className='flex items-center gap-5'>
-				<img
-					className='h-[140px] w-[140px] shadow border-8 border-bgc border-double rounded-xl'
-					src={product.url}
-					alt={product.name}
-				/>
+		<div className='flex font-medium text-lg items-center text-center p-3 h-[200px]'>
+			<img
+				className='h-[140px] w-[140px] shadow border-8 border-bgc border-double rounded-xl'
+				src={product.url}
+				alt={product.name}
+			/>
+
+			<div className="p-4 w-full">
 				<h2>{product.name}</h2>
+				<div className='flex justify-center items-center'>
+					<button
+						className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
+						onClick={decreaseQuantity}>
+						-
+					</button>
+					<h2>{product.quantity}</h2>
+					<button
+						className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
+						onClick={increaseQuantity}>
+						+
+					</button>
+				</div>
+				<h2 className="font-bold">{product.price}€</h2>
+				
+
 			</div>
-			<h2>{product.price}€</h2>
-			<div className='flex justify-center items-center'>
-				<button
-					className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
-					onClick={decreaseQuantity}>
-					-
-				</button>
-				<h2>{product.quantity}</h2>
-				<button
-					className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
-					onClick={increaseQuantity}>
-					+
-				</button>
-			</div>
-			<h3>{product.price * product.quantity}€</h3>
 		</div>
 	);
 };

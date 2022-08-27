@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 const NavBar = ({ cart }) => {
 	return (
-		<nav className='text-lg justify-center sm:justify-between flex items-center font-bold h-[10%] text-light bg-accent '>
+		<nav className='text-lg justify-center sm:justify-between flex items-center font-bold h-16 sticky w-full top-0 text-light bg-accent '>
 			<Link
 				to='/'
 				className=' sm:mx-20 uppercase text-3xl sm:text-4xl tracking-wider font-extrabold'>
 				<h1>Cucucakes</h1>
 			</Link>
-			<div className='flex justify-center sm:items-center sm:w-auto  items-end w-full fixed top-0 left-0 h-full sm:top-full sm:my-20 sm:static sm:flex-row sm:mr-20'>
-				<div className="flex h-10 bg-accent justify-center items-center w-full">
+			<div className='flex justify-center sm:items-center sm:w-auto items-end w-full fixed top-0 left-0 h-full sm:top-full sm:my-20 sm:static sm:flex-row sm:mr-20'>
+				<div className='flex h-10 bg-accent justify-center items-center w-full'>
 					<Link to='shop' className='mr-10'>
 						<h1>Shop</h1>
 					</Link>

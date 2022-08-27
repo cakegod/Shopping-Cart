@@ -6,7 +6,7 @@ const App = () => {
 	const [cart, setCart] = useState([]);
 
 	return (
-		<div className='h-full w-full bg-bgc text-dark'>
+		<div className='min-h-screen max-h-fit  w-full bg-bgc text-dark'>
 			<NavBar cart={cart}/>
 			<Outlet context={[cart, setCart]} />
 		</div>
