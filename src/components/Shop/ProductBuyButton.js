@@ -21,7 +21,7 @@ const ProductBuyButton = ({ product }) => {
 
 	return (
 		<button
-			className='hover:scale-105 transition-all font-bold h-10 w-32 flex justify-center items-center  rounded-lg bg-accent text-light shrink-0'
+			className='active:scale-105  hover:scale-105 transition-all font-bold h-10 w-32 flex justify-center items-center  rounded-lg bg-accent text-light shrink-0'
 			onClick={() => addToCart(product)}>
 			<MdAddShoppingCart size='20' />
 			Add to cart

@@ -35,7 +35,7 @@ const CartItem = ({ product }) => {
 				alt={product.name}
 			/>
 
-			<div className="p-4 w-full">
+			<div className="p-4 w-full h-full flex flex-col justify-center items-center">
 				<h2>{product.name}</h2>
 				<div className='flex justify-center items-center'>
 					<button
@@ -50,7 +50,7 @@ const CartItem = ({ product }) => {
 						+
 					</button>
 				</div>
-				<h2 className="font-bold">{product.price}€</h2>
+				<h2 className="font-bold">{product.price + "€ / unit"}</h2>
 				
 
 			</div>

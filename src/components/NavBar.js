@@ -10,7 +10,7 @@ const NavBar = ({ cart }) => {
 				className=' sm:mx-20 uppercase text-3xl sm:text-4xl tracking-wider font-extrabold'>
 				<h1>Cucucakes</h1>
 			</Link>
-			<div className='flex justify-center sm:items-center sm:w-auto items-end w-full fixed top-0 left-0 h-full sm:top-full sm:my-20 sm:static sm:flex-row sm:mr-20'>
+			<div className='flex justify-center sm:items-center sm:w-auto items-end w-full fixed bottom-0 sm:top-auto sm:my-20 sm:static sm:flex-row sm:mr-20'>
 				<div className='flex h-10 bg-accent justify-center items-center w-full'>
 					<Link to='shop' className='mr-10'>
 						<h1>Shop</h1>
