@@ -11,8 +11,8 @@ const Cart = () => {
 			Your Cart is Empty!
 		</h1>
 	) : (
-		<div className='flex flex-cols justify-center xl:pt-8 pb-12 m-2 bg-bgc '>
-			<div className='w-96 flex flex-col items-center bg-bgc 	'>
+		<div className='flex flex-cols justify-center xl:pt-8 pb-12  pattern'>
+			<div className='w-96 flex flex-col items-center '>
 				<h1 className='text-2xl xl:text-4xl mb-2 font-bold '>Your cart</h1>
 				<div className='w-full text-lg flex flex-col justify-center shadow rounded-md bg-light '>
 					<Table />

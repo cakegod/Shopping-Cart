@@ -30,7 +30,7 @@ const Item = ({ product }) => {
 	return (
 		<div className='flex font-medium text-lg items-center text-center p-3 h-[200px]'>
 			<img
-				className='h-[140px] w-[140px] shadow border-8 border-bgc border-double rounded-xl'
+				className='h-[140px] w-[140px] border-8 border-bgc border-double rounded-xl'
 				src={product.url}
 				alt={product.name}
 			/>
