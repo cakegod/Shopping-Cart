@@ -2,7 +2,7 @@ import BuyButton from './buyButton';
 
 const ProductCard = ({ product }) => {
 	return (
-		<div className=' md:max-h-72 shadow-sm bg-light rounded-md flex flex-col md:flex-row hover:shadow-lg hover:shadow-accent/30 shadow-accent/10 transition-all duration-500 '>
+		<div className=' md:max-h-80 shadow-sm bg-light rounded-md flex flex-col md:flex-row hover:shadow-lg hover:shadow-accent/30 shadow-accent/10 transition-all duration-500 '>
 			<img src={product.url} alt={product.name} className='rounded-l-md' />
 			<div className='flex flex-col grow p-6 gap-1 justify-between '>
 				<h2 className='text-xl flex font-bold'>{product.name}</h2>

@@ -9,13 +9,13 @@ const Nav = () => {
 	const { cart } = useContext(CartContext);
 
 	return (
-		<nav className='text-lg justify-center sm:justify-between flex items-center font-bold h-16 sticky w-full top-0 sm:pl-20 text-light bg-accent shadow-md shadow-accent/30'>
+		<nav className='text-lg justify-center sm:justify-between flex items-center font-bold h-16 sticky w-full top-0 text-light bg-accent shadow-md shadow-accent/30'>
 			<Link href='/'>
 				<a className=' sm:mx-20 uppercase text-3xl sm:text-4xl tracking-wider font-extrabold'>
 					Cucucakes
 				</a>
 			</Link>
-			<div className='flex justify-evenly items-center fixed bottom-0 w-full sm:top-auto sm:static sm:flex-row sm:mr-20 bg-accent h-14 sm:justify-end sm:gap-24 sm:pr-20'>
+			<div className='flex justify-evenly items-center fixed bottom-0 w-full sm:top-auto sm:static sm:flex-row sm:mr-20 bg-accent h-14 sm:justify-end sm:gap-24 '>
 				<div className='flex items-center gap-1 sm:hidden'>
 					<MdHomeFilled size='20' />
 					<Link href='/'>
