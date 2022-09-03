@@ -12,6 +12,9 @@ module.exports = {
 				bgc: '#fdc8bc',
 				accent: '#e6516d',
 			},
+			screens: {
+				'hover-hover': {'raw': '(hover: hover)'},
+	}
 		},
 	},
 	plugins: [],
