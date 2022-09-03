@@ -17,7 +17,7 @@ const Nav = () => {
 					</a>
 				</Link>
 			</div>
-			<div className='flex justify-evenly items-center fixed bottom-0 w-full lg:top-auto lg:static lg:flex-row lg:pr-20 bg-accent h-10 lg:justify-end lg:gap-24 lg:h-full'>
+			<div className='flex justify-evenly items-center fixed bottom-0 w-full lg:top-auto lg:static lg:flex-row lg:pr-20 bg-accent h-10 lg:justify-end lg:gap-24 lg:h-full z-40'>
 				<div className='flex items-center gap-1 lg:hidden'>
 					<MdHomeFilled size='20' />
 					<Link href='/'>
