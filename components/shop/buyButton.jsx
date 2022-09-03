@@ -23,7 +23,7 @@ const BuyButton = ({ product }) => {
 
 	return (
 		<button
-			className='active:shadow-none active:translate-y-[6px] shadow-[0_6px_#9b283d] transition-all font-bold h-10 w-32 flex justify-center items-center my-4 rounded-lg bg-accent text-light shrink-0 '
+			className='btn-primary '
 			onClick={() => addToCart(product)}>
 			<MdAddShoppingCart size='20' />
 			Add to cart

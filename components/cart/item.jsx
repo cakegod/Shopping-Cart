@@ -36,8 +36,8 @@ const Item = ({ product }) => {
 			/>
 
 			<div className='p-4 w-full h-full flex flex-col justify-center items-center'>
-				<h2>{product.name}</h2>
-				<div className='flex justify-center items-center'>
+				<h2 className='font-bold'>{product.name}</h2>
+				<div className='flex justify-center items-center '>
 					<button
 						className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
 						onClick={decreaseQuantity}>
@@ -50,7 +50,7 @@ const Item = ({ product }) => {
 						+
 					</button>
 				</div>
-				<h2 className='font-bold'>{product.price + '€ / unit'}</h2>
+				<h2 className=''>{product.price + '€ / unit'}</h2>
 			</div>
 		</div>
 	);
