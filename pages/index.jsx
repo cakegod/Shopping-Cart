@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const Home = () => {
 	return (
-		<div className='flex items-center flex-col '>
-			<div className='bg-light sm:w-2/6 flex flex-col items-center p-6 box- h-screen sm:h-auto text-center sm:py-16 sm:mt-6 rounded-lg shadow-lg gap-4'>
+		<div className='flex items-center flex-col max-h-20 p-2'>
+			<div className='bg-light md:w-4/6 xl:w-3/6 flex flex-col items-center p-4 md:p-8 box- h-screen md:h-auto text-center rounded-lg shadow-md md:shadow-lg gap-4'>
 				<h2 className='pt-8 pb-4 text-4xl font-bold'>
 					Welcome to our cake shop!
 				</h2>
@@ -16,7 +16,7 @@ const Home = () => {
 					selection includes a variety of flavors and sizes, so there's
 					something for everyone!
 				</p>
-				<button className='transition-all font-bold h-10 w-60 p-2 box-content flex justify-center items-center  rounded-lg bg-accent text-light shrink-0 text-xl active:shadow-none active:translate-y-[6px] shadow-[0_6px_#9b283d]'>
+				<button className='btn-primary text-xl'>
 					<Link href='shop' className=''>
 						Press here to start shopping!
 					</Link>

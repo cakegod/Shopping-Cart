@@ -7,13 +7,13 @@ const Cart = () => {
 	const { cart } = useContext(CartContext);
 
 	return cart.length === 0 ? (
-		<h1 className='flex justify-center text-xl xl:text-3xl font-bold mb-4 py-8 '>
+		<h1 className='flex justify-center text-3xl xl:text-4xl font-bold mb-4 py-8 '>
 			Your Cart is Empty!
 		</h1>
 	) : (
-		<div className='flex flex-cols justify-center xl:pt-8 pb-12  pattern'>
-			<div className='w-96 flex flex-col items-center '>
-				<h1 className='text-2xl xl:text-4xl mb-2 font-bold '>Your cart</h1>
+		<div className='flex flex-cols justify-center xl:pt-8 pb-14 p-4 pattern'>
+			<div className='w-full max-w-xl flex flex-col items-center '>
+				<h1 className='text-3xl xl:text-4xl mb-2 font-bold '>Your cart</h1>
 				<div className='w-full text-lg flex flex-col justify-center shadow rounded-md bg-light '>
 					<Table />
 				</div>
