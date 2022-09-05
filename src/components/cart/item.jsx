@@ -1,3 +1,4 @@
+import Image from 'next/future/image';
 import { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
 
@@ -29,8 +30,10 @@ const Item = ({ product }) => {
 
 	return (
 		<div className='flex font-medium text-lg items-center text-center p-3 h-[200px]'>
-			<img
+			<Image
 				className='h-[140px] w-[140px] border-8 border-bgc border-double rounded-xl'
+				width='360'
+				height='360'
 				src={product.url}
 				alt={product.name}
 			/>

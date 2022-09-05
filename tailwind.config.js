@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		'./pages/**/*.{js,ts,jsx,tsx}',
-		'./components/**/*.{js,ts,jsx,tsx}',
+		'./src/pages/**/*.{js,ts,jsx,tsx}',
+		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		extend: {
@@ -13,8 +13,8 @@ module.exports = {
 				accent: '#e6516d',
 			},
 			screens: {
-				'hover-hover': {'raw': '(hover: hover)'},
-	}
+				'hover-hover': { raw: '(hover: hover)' },
+			},
 		},
 	},
 	plugins: [],

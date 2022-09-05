@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
 		<CartProvider>
 			<Head>
 				<title>Cucucakes</title>
+				<meta name='Cake shop'></meta>
 			</Head>
 			<Nav />
 			<Component {...pageProps} />
