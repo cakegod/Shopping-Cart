@@ -2,7 +2,7 @@ import React from 'react';
 import { memo } from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
-function Buttons({ product }) {
+function Buttons({ product, children }) {
 	const { cartMemo, setCart } = useContext(CartContext);
 
 	const increaseQuantity = () => {
@@ -34,7 +34,7 @@ function Buttons({ product }) {
 				onClick={decreaseQuantity}>
 				-
 			</button>
-			<h2>{product.quantity}</h2>
+			{children}
 			<button
 				className='h-6 w-6 bg-accent text-light font-bold rounded-full m-2 flex justify-center items-center'
 				onClick={increaseQuantity}>

@@ -3,12 +3,8 @@ import { memo, useMemo } from 'react';
 
 function NavLink({ icon, children, url, title, classStyle }) {
 	const LinkMemo = useMemo(() => {
-		return (
-			<Link href={url}>
-				<a>{title}</a>
-			</Link>
-		);
-	}, []);
+		return <Link href={url}>{title}</Link>;
+	}, [title, url]);
 
 	return (
 		<div

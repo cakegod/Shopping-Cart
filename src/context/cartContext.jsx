@@ -8,10 +8,11 @@ export const CartContext = createContext();
 const Cart = ({ children }) => {
 	const [cart, setCart] = useState([]);
 
+
 	const cartMemo = useMemo(() => cart, [cart]);
 
 	return (
-		<CartContext.Provider value={{ cartMemo, setCart }}>
+		<CartContext.Provider value={{ cartMemo, setCartMemo }}>
 			{children}
 		</CartContext.Provider>
 	);
