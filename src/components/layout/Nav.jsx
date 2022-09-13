@@ -1,19 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import { MdShoppingCart, MdHomeFilled, MdShoppingBasket } from 'react-icons/md';
-import { CartContext } from '../../context/cartContext';
-import { useContext } from 'react';
 import NavLink from './NavLink';
 import CartNumber from './CartNumber';
 import { memo } from 'react';
 import { useMemo } from 'react';
 
-
-
 const Nav = () => {
-	const { cart } = useContext(CartContext);
-
-
 	const HomeIcon = useMemo(() => {
 		return <MdHomeFilled size='20' />;
 	}, []);

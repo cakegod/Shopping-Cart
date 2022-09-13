@@ -1,8 +1,9 @@
-import {memo} from 'react';
+import { memo } from 'react';
 import { useContext } from 'react';
 import Checkout from '../components/cart/Checkout';
 import Table from '../components/cart/Table';
 import { CartContext } from '../context/cartContext';
+import { m, LazyMotion, domAnimation } from 'framer-motion';
 
 const Cart = () => {
 	const { cartMemo: cart } = useContext(CartContext);
@@ -12,15 +13,21 @@ const Cart = () => {
 			Your Cart is Empty!
 		</h1>
 	) : (
-		<div className='flex flex-cols justify-center xl:pt-8 pb-14 p-4 pattern'>
-			<div className='w-full max-w-xl flex flex-col items-center '>
-				<h1 className='text-3xl xl:text-4xl mb-2 font-bold '>Your cart</h1>
-				<div className='w-full text-lg flex flex-col justify-center shadow rounded-md bg-light '>
-					<Table />
+		<LazyMotion features={domAnimation}>
+			<m.div
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				viewport={{ once: true }}
+				className='flex flex-cols justify-center xl:pt-8 pb-14 p-4 pattern'>
+				<div className='w-full max-w-xl flex flex-col items-center '>
+					<h1 className='text-3xl xl:text-4xl mb-2 font-bold '>Your cart</h1>
+					<div className='w-full text-lg flex flex-col justify-center shadow rounded-md bg-light '>
+						<Table />
+					</div>
+					<Checkout cart={cart} />
 				</div>
-				<Checkout cart={cart} />
-			</div>
-		</div>
+			</m.div>
+		</LazyMotion>
 	);
 };
 

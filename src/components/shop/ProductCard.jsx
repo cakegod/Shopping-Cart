@@ -11,7 +11,6 @@ const ProductCard = ({ product }) => {
 				alt={product.name}
 				className='rounded-l-md h-full w-full md:max-w-[360px]'
 			/>
-
 			<div className='flex flex-col grow p-6 gap-1 justify-between '>
 				<h2 className='text-2xl flex font-bold'>{product.name}</h2>
 				<span className='text-3xl font-extrabold'>{product.price}€</span>

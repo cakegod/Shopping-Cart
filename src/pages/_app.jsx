@@ -3,6 +3,7 @@ import Nav from '../components/layout/Nav';
 import { CartProvider } from '../context/cartContext';
 import Head from 'next/head';
 
+
 function MyApp({ Component, pageProps }) {
 	return (
 		<CartProvider>
