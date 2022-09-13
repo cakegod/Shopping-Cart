@@ -1,10 +1,11 @@
+import {memo} from 'react';
 import { useContext } from 'react';
-import Checkout from '../components/cart/checkout';
-import Table from '../components/cart/table';
+import Checkout from '../components/cart/Checkout';
+import Table from '../components/cart/Table';
 import { CartContext } from '../context/cartContext';
 
 const Cart = () => {
-	const { cart } = useContext(CartContext);
+	const { cartMemo: cart } = useContext(CartContext);
 
 	return cart.length === 0 ? (
 		<h1 className='flex justify-center text-3xl xl:text-4xl font-bold mb-4 py-8 '>
@@ -23,4 +24,4 @@ const Cart = () => {
 	);
 };
 
-export default Cart;
+export default memo(Cart);

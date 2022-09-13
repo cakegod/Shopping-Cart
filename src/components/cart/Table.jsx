@@ -1,15 +1,15 @@
-import { useContext } from 'react';
+import { memo, useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
-import Item from './item';
+import Item from './Item';
 
 const Table = () => {
-	const { cart } = useContext(CartContext);
+	const { cartMemo } = useContext(CartContext);
 
 	return (
 		<>
 			<div className='grid grid-cols-[2fr_repeat(3,_1fr)] font-extrabold text-center content-center items-center bg-accent text-light text-lg rounded-t-md h-1'></div>
 			<div className='rounded-b-md divide-y-8 divide-dashed divide-bgc'>
-				{cart.map((product) => {
+				{cartMemo.map((product) => {
 					return <Item key={product.name} product={product} />;
 				})}
 			</div>
@@ -17,4 +17,4 @@ const Table = () => {
 	);
 };
 
-export default Table;
+export default memo(Table);

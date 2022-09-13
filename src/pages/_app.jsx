@@ -1,5 +1,5 @@
 import '../styles/global.css';
-import Nav from '../components/layout/nav';
+import Nav from '../components/layout/Nav';
 import { CartProvider } from '../context/cartContext';
 import Head from 'next/head';
 

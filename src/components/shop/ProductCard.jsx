@@ -1,5 +1,5 @@
 import Image from 'next/future/image';
-import BuyButton from './buyButton';
+import BuyButton from './BuyButton';
 
 const ProductCard = ({ product }) => {
 	return (
