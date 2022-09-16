@@ -12,7 +12,7 @@ const Cart = ({ children }) => {
 	const cartMemo = useMemo(() => cart, [cart]);
 
 	return (
-		<CartContext.Provider value={{ cartMemo, setCartMemo }}>
+		<CartContext.Provider value={{ cartMemo, setCart }}>
 			{children}
 		</CartContext.Provider>
 	);
